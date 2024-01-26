@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/gameforfun/static/css/main.037b3394.css",
-    "main.js": "/gameforfun/static/js/main.2654954b.js",
+    "main.js": "/gameforfun/static/js/main.b9761c2f.js",
     "static/js/787.9c8e6a73.chunk.js": "/gameforfun/static/js/787.9c8e6a73.chunk.js",
     "static/media/logo.svg": "/gameforfun/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/gameforfun/index.html",
     "main.037b3394.css.map": "/gameforfun/static/css/main.037b3394.css.map",
-    "main.2654954b.js.map": "/gameforfun/static/js/main.2654954b.js.map",
+    "main.b9761c2f.js.map": "/gameforfun/static/js/main.b9761c2f.js.map",
     "787.9c8e6a73.chunk.js.map": "/gameforfun/static/js/787.9c8e6a73.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.037b3394.css",
-    "static/js/main.2654954b.js"
+    "static/js/main.b9761c2f.js"
   ]
 }
