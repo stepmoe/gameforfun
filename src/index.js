@@ -3,9 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ReactGA from 'react-ga';  
 
+//Init
+ReactGA.initialize('G-9X05N7D8TS');  
 
 function Square(props) {
+  ReactGA.pageview(window.location.pathname + window.location.search);
   return (
     <button className="square" onClick={props.onClick}>
       {props.value}
