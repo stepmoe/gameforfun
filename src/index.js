@@ -1,15 +1,20 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import ReactGA from 'react-ga';  
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
 
-//Init
-ReactGA.initialize('G-9X05N7D8TS');  
+//Initialize React App 
+const TRACKING_ID = "G-9X05N7D8TS"; // Google Analytics tracking ID
+ReactGA.initialize(TRACKING_ID);
+
 
 function Square(props) {
-  ReactGA.pageview(window.location.pathname + window.location.search);
+  useEffect(() => {
+    // To record a page view
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   return (
     <button className="square" onClick={props.onClick}>
       {props.value}
