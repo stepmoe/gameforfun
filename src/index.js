@@ -6,7 +6,7 @@ import React, { useEffect } from 'react';
 import ReactGA from 'react-ga';
 
 //Initialize React App 
-const TRACKING_ID = "G-9X05N7D8TS"; // Google Analytics tracking ID
+const TRACKING_ID = "UA-300332158-1"; // Google Analytics tracking ID
 ReactGA.initialize(TRACKING_ID);
 
 
