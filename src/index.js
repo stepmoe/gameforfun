@@ -4,6 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+/*
 function Square(props) {
   return (
     <button className="square" onClick={props.onClick}>
@@ -82,8 +91,8 @@ class Game extends React.Component {
           <Board />
         </div>
         <div className="game-info">
-          <div>{/* status */}</div>
-          <ol>{/* TODO */}</ol>
+          <div>{}</div> //insert status into the brackets
+          <ol>{}</ol>   // insert Todo into the brackets
         </div>
       </div>
     );
@@ -115,14 +124,8 @@ function calculateWinner(squares) {
   return null;
 }
 
+*/
 
-
-//const root = ReactDOM.createRoot(document.getElementById('root'));
-//root.render(
-//  <React.StrictMode>
-//    <App />
-//  </React.StrictMode>
-//);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
