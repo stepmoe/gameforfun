@@ -1,7 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import React, {useEffect} from 'react';
+import ReactGA from 'react-ga4';
 
 function App() {
+  useEffect(() => {
+    ReactGA.initialize('G-9X05N7D8TS');
+    ReactGA.send('pageview');
+  },[]);
   return (
     <div className="App">
       <header className="App-header">

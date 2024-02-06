@@ -1,20 +1,10 @@
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import React, { useEffect } from 'react';
-import ReactGA from 'react-ga';
-
-//Initialize React App 
-const TRACKING_ID = "UA-300332158-1"; // Google Analytics tracking ID
-ReactGA.initialize(TRACKING_ID);
-
 
 function Square(props) {
-  useEffect(() => {
-    // To record a page view
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
   return (
     <button className="square" onClick={props.onClick}>
       {props.value}
